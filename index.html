@@ -19,12 +19,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.DataFrame({
-    '名前':['GOKU', 'LUFFY', 'NARUTO'],
-    '年齢':[43, 19, 17]})
+    'name':['GOKU', 'LUFFY', 'NARUTO'],
+    'age':[43, 19, 17]})
 
 fig, ax = plt.subplots()
-ax.bar(df['名前'], df['年齢'], color='pink')
-plt.title('Age of the hero')
+ax.bar(df['name'], df['age'], color='pink')
+
 
 pyscript.write('plot', fig)
 
