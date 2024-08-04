@@ -13,8 +13,9 @@
 
 </head>
 <body>
-    <div id="plot"></div>
-    <py-script>
+<div id="plot"></div>
+
+<py-script>
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -24,7 +25,6 @@ df = pd.DataFrame({
 
 fig, ax = plt.subplots()
 ax.bar(df['name'], df['age'], color='pink')
-
 
 pyscript.write('plot', fig)
 
